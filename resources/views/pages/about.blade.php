@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.page')
 
-        <title>{{config('app.name', 'Bitlibrary')}}</title>
+@section('body')
 
-    </head>
-    <body>
-        <h1>Test about</h1>
-        <p>Lorem ipsum balalalalalala</p>
-    </body>
-</html>
+    <h1>Test about</h1>
+    <p>Lorem ipsum balalalalalala</p>
+
+@endsection
