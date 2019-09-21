@@ -13,7 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $post = Post::all();
+        $post = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('posts.index')->with('posts', $post);
     }
 
@@ -46,8 +46,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        $post = Post::find($id);
-        return view(posts.show)->with('post',$post);
+        $posts = Post::find($id);
+        return view('posts.show')->with('post',$posts);
     }
 
     /**
