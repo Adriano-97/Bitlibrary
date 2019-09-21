@@ -12,11 +12,12 @@
               <a class="nav-link" href="/pages/services">Services</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="/posts">Blog</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="/pages/about">About</a>
             </li>
-            {{-- <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> --}}
+
           </ul>
         </div>
       </nav>
