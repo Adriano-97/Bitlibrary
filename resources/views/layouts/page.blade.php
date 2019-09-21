@@ -12,7 +12,12 @@
     <body>
         @include('inc.navbar')
         <div class = "container">
-        @yield('body')
+            @include('inc.messages')
+            @yield('body')
         </div>
+    <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
     </body>
 </html>
