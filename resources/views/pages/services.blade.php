@@ -1,6 +1,6 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
-@section('body')
+@section('content')
 
     <h1>Test services</h1>
     <p>Lorem ipsum balalalalalala</p>
