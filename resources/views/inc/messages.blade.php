@@ -5,11 +5,11 @@
         </div>
     @endforeach
 @endif
-@if ($message = Session::get('error'))
+{{-- @if ($message = Session::get('error'))
     <div class="alert alert-success">
         <p>{{ $message }}</p>
     </div>
- @endif
+ @endif --}}
 
 @if(session('success'))
     <div class="alert alert-success">
