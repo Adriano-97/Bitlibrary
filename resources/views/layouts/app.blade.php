@@ -25,7 +25,9 @@
         @include('inc.navbar')
            <main class="py-4">
             @include('inc.messages')
-            @yield('content')
+            <div class = 'px-5'>
+                @yield('content')
+            </div>
         </main>
     </div>
     <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
