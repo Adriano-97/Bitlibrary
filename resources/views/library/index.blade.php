@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Library</h1>
+    <div>
+        <tr>
+            <h1 scope= "col">Library</h1>
+            <a href="/library/create" class="btn btn-dark" scope="col">Add a book</a>
+        </tr>
+    </div>
+    <br>
     @if (count($books) > 0)
         <table class="table">
             <thead>
@@ -15,8 +21,8 @@
                 @foreach ($books as $book)
                     <tr>
                         <td>{{$book->title}}</td>
-                        <td><a href="/library/{{$book->id}}" class="btn btn-default">More details</a></td>
-                        <td><a href="" class="btn btn-default">Download</a></td>
+                        <td><a href="/library/{{$book->id}}" class="btn btn-primary">More details</a></td>
+                        <td><a href="" class="btn btn-primary">Download</a></td>
                     </tr>
                 @endforeach
                 </tbody>
