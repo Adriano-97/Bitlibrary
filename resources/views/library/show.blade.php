@@ -12,10 +12,8 @@
         </tr>
         <tr >
         <form action="/download/{{$books->id}}">
-            {{-- <input type="hidden" name="title" value={{$books->title}}>
-            <input type="hidden" name="storedName" value={{$books->storedName}}>--}}
             <input class="btn btn-primary float-right" type="submit" value="Download">
-            </form>
+        </form>
         </tr>
         <tr>
             @if(Auth::user()->id == $books->posterId)
