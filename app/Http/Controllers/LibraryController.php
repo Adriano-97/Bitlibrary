@@ -119,4 +119,29 @@ class LibraryController extends Controller
     {
         //
     }
+
+    public function download($id){
+        try{
+            $book = Book::find($id);
+            $file_url = $book->storedName;
+            $file_name  = $book->title.'.pdf';
+            $mime = Storage::disk('s3')->getDriver()->getMimetype('books/'.$file_url);
+            $size = Storage::disk('s3')->getDriver()->getSize('books/'.$file_url);
+
+            $response =  [
+                'Content-Type' => $mime,
+                'Content-Length' => $size,
+                'Content-Description' => 'File Transfer',
+                'Content-Disposition' => "attachment; filename={$file_name}",
+                'Content-Transfer-Encoding' => 'binary',
+            ];
+            ob_end_clean();
+
+            return \Response::make(Storage::disk('s3')->get('books/'.$file_url), 200, $response);
+            var_dump($response);
+        }catch(Exception  $e){
+            return $this->respondInternalError( $e->getMessage(), 'object', 500);
+        }
+    }
+
 }
