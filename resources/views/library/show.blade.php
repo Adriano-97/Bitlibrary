@@ -8,11 +8,18 @@
     </div>
     <div>
         <tr>
-            <a href="" class="btn btn-primary">Download</a>
+            <a href="/library" class="btn btn-secondary float-left"> Go Back</a>
+        </tr>
+        <tr >
+                <a href="" class="btn btn-primary float-right ml-1">Download</a>
         </tr>
         <tr>
-            <a href="/library" class="btn btn-secondary"> Go Back</a>
+            @if(Auth::user()->id == $books->posterId)
+                <a href="/library/{{$books->id}}/edit" class="btn btn-primary float-right mr-1">Edit</a>
+            @endif
         </tr>
+
+
     </div>
 @endsection
 

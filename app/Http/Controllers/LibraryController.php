@@ -93,7 +93,8 @@ class LibraryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $book = Book::find($id);
+        return view('library.edit')->with('books', $book);
     }
 
     /**
