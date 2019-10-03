@@ -11,7 +11,11 @@
             <a href="/library" class="btn btn-secondary float-left"> Go Back</a>
         </tr>
         <tr >
-                <a href="" class="btn btn-primary float-right ml-1">Download</a>
+        <form action="/download/{{$books->id}}">
+            {{-- <input type="hidden" name="title" value={{$books->title}}>
+            <input type="hidden" name="storedName" value={{$books->storedName}}>--}}
+            <input class="btn btn-primary float-right" type="submit" value="Download">
+            </form>
         </tr>
         <tr>
             @if(Auth::user()->id == $books->posterId)
