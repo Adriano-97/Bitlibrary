@@ -22,8 +22,11 @@
                     <tr>
                         <td>{{$book->title}}</td>
                         <td><a href="/library/{{$book->id}}" class="btn btn-primary">More details</a></td>
-                        <td><a href="" class="btn btn-primary">Download</a></td>
-                    </tr>
+                        <td>
+                            <form action="/download/{{$book->id}}">
+                            <input class="btn btn-primary float-right" type="submit" value="Download">
+                            </form>
+                        </tr>
                 @endforeach
                 </tbody>
         </table>
