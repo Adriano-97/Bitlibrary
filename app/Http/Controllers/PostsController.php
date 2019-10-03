@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Post;
 use Illuminate\Support\Facades\Storage;
+use App\Post;
+
 class PostsController extends Controller
 {
-        /**
+    /**
      * Create a new controller instance.
      *
      * @return void
