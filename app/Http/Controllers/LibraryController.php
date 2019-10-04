@@ -171,7 +171,7 @@ class LibraryController extends Controller
                 'Content-Disposition' => "attachment; filename={$file_name}",
                 'Content-Transfer-Encoding' => 'binary',
             ];
-            ob_end_clean();
+            // ob_end_clean();
 
             return \Response::make(Storage::disk('s3')->get('books/'.$file_url), 200, $response);
             return redirect('/library')->with('success', 'File Downloaded');
