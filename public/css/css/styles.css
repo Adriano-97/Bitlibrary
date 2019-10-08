@@ -1,0 +1,48 @@
+Navbar.div.style {
+}
+
+#logo {
+  max-height: 43px;
+  margin-right: 16px;
+  margin-top: -3px;
+}
+
+#navbar {
+  background-color: rgb(255,255,255);
+  margin-top: 50px;
+}
+
+#header {
+  background-color: rgb(65,190,207);
+}
+
+#header {
+  background-color: rgb(70,187,205);
+}
+
+#icon {
+  max-height: 100px;
+  margin-left: 5px;
+  color: white;
+}
+
+#headerText {
+  margin-top: 5px;
+  margin-left: 4px;
+  color: white;
+}
+
+#navbarTxt {
+  color: rgb(70,187,205);
+}
+
+.bg-secondary {
+  background-color: #46bbcd!important;
+}
+
+a {
+  color: #46bbcd;
+  text-decoration: none;
+  background-color: transparent;
+}
+
