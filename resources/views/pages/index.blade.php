@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="icon" href="{!! asset('/img/logo.png') !!}">
+    </head>
 @extends('layouts.app')
 
 @section('content')
