@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="/css/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/css/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/css/Footer-Basic.css">
     <link rel="stylesheet" href="/css/css/Header-Blue.css">
     <link rel="stylesheet" href="/css/css/styles.css">
 </head>
 
-<body>
+<header>
     <div>
         <nav class="navbar navbar-light navbar-expand-md  text-light" id="navbar">
             <div class="container"><img id="logo" src="/img/logo.png"><a class="navbar-brand" id="navbarTxt" href='/'>BitLibrary</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -66,7 +67,7 @@
     <div></div>
     <script src="/js/bootstrapJs/jquery.min.js"></script>
     <script src="/js/bootstrapJs/bootstrap.min.js"></script>
-</body>
+</header>
 
 
 
