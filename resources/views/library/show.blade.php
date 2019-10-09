@@ -16,9 +16,13 @@
         </form>
         </tr>
         <tr>
-            @if(Auth::user()->id == $books->posterId)
-                <a href="/library/{{$books->id}}/edit" class="btn btn-primary float-right mr-1">Edit</a>
-            @endif
+            @guest
+
+            @else
+                @if(Auth::user()->id == $books->posterId)
+                    <a href="/library/{{$books->id}}/edit" class="btn btn-primary float-right mr-1">Edit</a>
+                @endif
+            @endguest
         </tr>
 
 

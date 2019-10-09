@@ -12,12 +12,16 @@
     <hr>
 <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
     <hr>
-    @if(Auth::user()->id == $post->user_id)
-        <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
+    @guest
 
-        {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
-            {{Form::hidden('_method', 'DELETE')}}
-            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-        {!!Form::close()!!}
-    @endif
+    @else
+        @if(Auth::user()->id == $post->user_id)
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
+
+            {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
+                {{Form::hidden('_method', 'DELETE')}}
+                {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+            {!!Form::close()!!}
+        @endif
+    @endguest
 @endsection
