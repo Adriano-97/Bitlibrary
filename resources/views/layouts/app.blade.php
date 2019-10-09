@@ -30,6 +30,11 @@
             <div class = 'px-5'>
                 @yield('content')
             </div>
+            <div class="footer-basic">
+                    <footer id="myFooter">
+                        <p id="footer" class="copyright" style="opacity: 1;">Bitlord &nbsp;2019</p>
+                    </footer>
+            </div>
         </main>
     </div>
     <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
