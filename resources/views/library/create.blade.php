@@ -14,6 +14,6 @@
         <div class = "form-goup">
             {{Form::file('pdf_file')}}
         </div>
-        {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('Submit', ['class' => 'btn btn-primary','id'=>"register"]) }}
     {!! Form::close() !!}
 @endsection

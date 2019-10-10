@@ -15,6 +15,6 @@
             {{Form::file('cover_image')}}
         </div>
         {{Form::hidden('_method', 'PATCH')}}
-        {{ Form::submit('Submit', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('Submit', ['class' => 'btn btn-primary','id'=>"register"]) }}
     {!! Form::close() !!}
 @endsection

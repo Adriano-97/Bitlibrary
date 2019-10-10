@@ -16,7 +16,7 @@
         </div>
         {{Form::hidden('_method', 'PATCH')}}
         <br><br>
-        {{ Form::submit('Submit', ['class' => 'btn btn-primary float-right']) }}
+        {{ Form::submit('Submit', ['class' => 'btn btn-primary float-right' ,'id'=>"register"]) }}
         {!! Form::close() !!}
          {{-- Delete BTN --}}
         {!! Form::open(['action' => ['LibraryController@destroy', $books->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
