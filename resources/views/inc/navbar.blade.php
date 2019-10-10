@@ -61,11 +61,16 @@
     </div>
     </nav>
     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="header">
-        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><i class="icon ion-email" id="icon"></i>
-            <h6 id="headerText">adriano199726@gmail.com</h6>
+        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <a class="icon ion-email" id="icon" href ="mailto:adriano199726@gmail.com"></a>
+            <a id="headerText" href ="mailto:adriano199726@gmail.com">adriano199726@gmail.com</a>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="nav navbar-nav"></ul>
-            </div><i class="fa fa-twitter" id="icon"></i><i class="fa fa-linkedin" id="icon"></i><i class="fa fa-github" id="icon"></i></div>
+            </div>
+            <a class="fa fa-twitter" id="icon" href="https://twitter.com/BitLord6" target="_blank"></a>
+            <a class="fa fa-linkedin" id="icon"href="https://www.linkedin.com/in/adriano-herrera-b19931155/" target="_blank"></a>
+            <a class="fa fa-github" id="icon" href="https://github.com/Adriano-97" target="_blank"></a>
+        </div>
     </nav>
     </div>
     <div></div>
