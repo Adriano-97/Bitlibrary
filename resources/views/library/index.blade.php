@@ -21,10 +21,10 @@
                 @foreach ($books as $book)
                     <tr>
                         <td>{{$book->title}}</td>
-                        <td><a href="/library/{{$book->id}}" class="btn btn-primary">More details</a></td>
+                        <td><a href="/library/{{$book->id}}" class="btn btn-primary" id="register" >More details</a></td>
                         <td>
                             <form action="/download/{{$book->id}}">
-                            <input class="btn btn-primary float-right" type="submit" value="Download">
+                            <input class="btn btn-primary float-right " id="register" type="submit" value="Download">
                             </form>
                         </tr>
                 @endforeach
