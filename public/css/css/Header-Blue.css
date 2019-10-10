@@ -222,8 +222,6 @@
   opacity: 0.2;
 }
 
-#h1div {
-}
 
 #h1id {
   max-width: 500px;
@@ -243,7 +241,16 @@
 #footer {
   color: rgb(255,255,255);
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
+}
+
+.item {
+  margin-top: 20px;
+}
+
+.item h2 {
+  font-weight: normal;
+  margin-top: 10px;
 }
 
