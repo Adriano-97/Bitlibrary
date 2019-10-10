@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="/css/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/css/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/css/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/css/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="/css/css/Footer-Basic.css">
     <link rel="stylesheet" href="/css/css/Header-Blue.css">
     <link rel="stylesheet" href="/css/css/styles.css">
@@ -65,8 +69,7 @@
     </nav>
     </div>
     <div></div>
-    <script src="/js/bootstrapJs/jquery.min.js"></script>
-    <script src="/js/bootstrapJs/bootstrap.min.js"></script>
+
 </header>
 
 
