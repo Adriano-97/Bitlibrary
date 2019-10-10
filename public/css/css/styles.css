@@ -27,8 +27,8 @@
   }
 
 #headerText {
-  margin-top: 5px;
   margin-left: 4px;
+
   color: white;
 }
 
@@ -73,3 +73,59 @@ a {
     bottom: 0;
     width: 100%;
   }
+
+h1{
+    margin: auto;
+    background-color: rgba(70,187,205,50);
+    color: white;
+    margin-bottom: 5px;
+}
+#profile{
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+@media (min-width:1200px) {
+  #container {
+    max-width: 1140px;
+    max-height: 500px;
+  }
+}
+
+@media (min-width:992px) {
+  #container {
+    max-width: 960px;
+    max-height: 500px;
+  }
+}
+
+@media (min-width:576px) {
+  #container {
+    max-width: 540px;
+    max-height: 500px;
+  }
+}
+
+@media (min-width:768px) {
+  #container {
+    max-width: 720px;
+    max-height: 500px;
+  }
+}
+
+#container {
+  max-height: 500px;
+  margin-bottom: 77px;
+}
+
+#navbar {
+    background-color: rgb(255,255,255);
+    max-height: 50px;
+  }
+
+#logo {
+    max-height: 43px;
+    margin-right: 16px;
+    margin-top: -3px;
+  }
+

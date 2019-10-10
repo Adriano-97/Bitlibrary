@@ -1,0 +1,58 @@
+#profile{
+  max-height: 300px;
+  border-radius: 50%;
+}
+#noH1{
+    margin: auto;
+    color: white;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+@media (min-width:1200px) {
+  #container {
+    max-width: 1140px;
+    max-height: 500px;
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width:992px) {
+  #container {
+    max-width: 960px;
+    max-height: 500px;
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width:576px) {
+  #container {
+    max-width: 540px;
+    max-height: 500px;
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width:768px) {
+  #container {
+    max-width: 720px;
+    max-height: 500px;
+    margin-bottom: 77px;
+  }
+}
+
+#container {
+  max-height: 500px;
+  margin-bottom: 77px;
+}
+
+#navbar {
+    background-color: rgb(255,255,255);
+    max-height: 50px;
+  }
+
+#logo {
+    max-height: 43px;
+    margin-right: 16px;
+    margin-top: -3px;
+  }
