@@ -19,10 +19,15 @@
     <link rel="stylesheet" href="/css/css/styles.css">
 </head>
 
-<header>
+<body>
     <div>
         <nav class="navbar navbar-light navbar-expand-md  text-light" id="navbar">
-            <div class="container"><img id="logo" src="/img/logo.png"><a class="navbar-brand" id="navbarTxt" href='/'>BitLibrary</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><img id="logo" src="/img/logo.png">
+                <a class="navbar-brand" id="navbarTxt" href='/'>BitLibrary</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon">
+                    </span>
+                </button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
@@ -75,7 +80,7 @@
     </div>
     <div></div>
 
-</header>
+</body>
 
 
 
