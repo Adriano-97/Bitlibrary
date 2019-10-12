@@ -10,7 +10,7 @@
 }
 
 @media (min-width:1200px) {
-  #container {
+  #container2 {
     max-width: 1140px;
     max-height: 500px;
     margin-bottom: 77px;
@@ -18,7 +18,7 @@
 }
 
 @media (min-width:992px) {
-  #container {
+  #container2 {
     max-width: 960px;
     max-height: 500px;
     margin-bottom: 77px;
@@ -26,7 +26,7 @@
 }
 
 @media (min-width:576px) {
-  #container {
+  #container2 {
     max-width: 540px;
     max-height: 500px;
     margin-bottom: 77px;
@@ -34,14 +34,14 @@
 }
 
 @media (min-width:768px) {
-  #container {
+  #container2 {
     max-width: 720px;
     max-height: 500px;
     margin-bottom: 77px;
   }
 }
 
-#container {
+#container2 {
   max-height: 500px;
   margin-bottom: 77px;
 }
@@ -56,3 +56,4 @@
     margin-right: 16px;
     margin-top: -3px;
   }
+
